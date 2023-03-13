@@ -1,19 +1,25 @@
-import Card from '../Card/Card';
+// import "./Cards.css";
 
-export default function Cards(props) {
-   const { characters } = props;
-   return <div>
-      {
-         characters.map((element) =>{
-            const { name, species, gender, image} = element;
-            return <Card
-               name = {name}
-               species = {species}
-               gender = {gender}
-               image = {image}
-               onClose = {() => window.alert('Emulamos que se cierra la card')}
-            />
-         })
-      }
-   </div>;
-}
+import styled from "styled-components";
+
+export const Titulo = styled.h1`
+  color: yellow;
+  font-size: 3em;
+`;
+
+export const Contenedor = styled.div`
+  border: 1px solid black;
+  background-color: blue;
+`;
+
+const Cards = () => {
+  return (
+    <Contenedor>
+      {/* <h1 style={tituloStyle}>Estas son las CARDS</h1> */}
+      <Titulo>Estas son las CARDS</Titulo>
+      <p>Texto 1</p>
+    </Contenedor>
+  );
+};
+
+export default Cards;

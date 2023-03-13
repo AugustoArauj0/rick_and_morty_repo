@@ -1,0 +1,14 @@
+.titulo{
+    font-size: medium;
+}
+
+.container{
+    border:1px solid black;
+    background-color: bisque;
+}
+
+.containerOtro{
+    border:1px solid black;
+    background-color: bisque;
+}
+
