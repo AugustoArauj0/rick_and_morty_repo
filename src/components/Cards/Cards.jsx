@@ -1,8 +1,9 @@
-import Card from './Card';
+import Card from '../Card/Card';
+import { CardsContaniner } from './styledComponents';
 
 export default function Cards(props) {
    const { characters } = props;
-   return <div>
+   return <CardsContaniner>
       {
          characters.map((element) =>{
             const { name, species, gender, image} = element;
@@ -15,5 +16,5 @@ export default function Cards(props) {
             />
          })
       }
-   </div>;
+   </CardsContaniner>;
 }

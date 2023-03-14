@@ -1,8 +1,12 @@
+import style from "./SearchBar.module.css";
+
 export default function SearchBar({onSearch}) {
    return (
-      <div>
-         <input type='search' />
-         <button onClick={ (characterID) => {onSearch(characterID) }}>Agregar</button>
+      <div className={style.bar}>
+         <input type='search' className={style.searchInput}/>
+         <button 
+         className={style.searchButton}
+         onClick={ (characterID) => {onSearch(characterID) }}>Agregar</button>
       </div>
    );
 }
