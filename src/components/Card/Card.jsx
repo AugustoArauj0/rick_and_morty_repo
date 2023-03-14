@@ -1,21 +1,12 @@
-// import "./Card.css";
-import style from "./Card.module.css";
 
-const Card = () => {
-  console.log(style);
-  //   const tituloStyle = {
-  //     color: "red",
-  //     fontSize: "2em",
-  //   };
-  return (
-    <div className={style.container}>
-      {/* <h1 style={tituloStyle}>Esto es una CARD</h1> */}
-      <h1 className={style.titulo}>Esto es una CARD</h1>
-      <div className={style.container}>
-        <p>Este es otro container</p>
+export default function Card({name, species, gender, image, onClose}) {
+   return (
+      <div>
+         <button onClick={onClose}>X</button>
+         <h2>Name: {name}</h2>
+         <h2>Species: {species}</h2>
+         <h2>Gender: {gender}</h2>
+         <img src={image} alt="" />
       </div>
-    </div>
-  );
-};
-
-export default Card;
+   );
+}
