@@ -1,0 +1,12 @@
+.contenedorAbout {
+    background-color: purple;
+    justify-content:center;
+    margin: auto;
+    margin-top: 5%;
+    width: 85%;
+    border-radius:2%;
+    font-family: sans-serif;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    text-shadow: 6px 4px 7px rgba(0,0,0,0.6);
+    font-size: large;
+ }
